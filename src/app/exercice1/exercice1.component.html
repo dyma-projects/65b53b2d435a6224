@@ -2,7 +2,8 @@
 <br/>
 <br/>
 <h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
+<!-- On envoie la valeur 'result' au composant enfant puis on récupere ce que retourne l'event eventmodifValeur et on set la valeur à traver la méthode updateResult  -->
+<app-exercice1-enfant [valeur] = "result" (eventmodifValeur)="updateResult($event)"></app-exercice1-enfant>
 <br/>
 <span> compteur : {{ result }}</span>
 <hr>

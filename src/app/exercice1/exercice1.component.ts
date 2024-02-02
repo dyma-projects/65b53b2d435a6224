@@ -11,4 +11,8 @@ export class Exercice1Component implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  updateResult(valeur: number) {
+    this.result = valeur;
+  }
 }
